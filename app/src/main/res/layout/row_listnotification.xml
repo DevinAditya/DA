@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearRownotification"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_600_4ccornerRadius">
+        <ImageView android:id="@+id/imageNotification"
+            android:layout_height="@dimen/_28pxh"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="@dimen/_26pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_notification"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+        <LinearLayout android:id="@+id/linearColumnmorning"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_85pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.88" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowmorning"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMORNING"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_morning"
+                    style="@style/txtAveriaSansLibrebold22" tools:text="@string/lbl_morning"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHrCounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_82pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_1_hr"
+                    style="@style/txtAveriaSansLibreregular15" tools:text="@string/lbl_1_hr"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtObatA"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_obat_a"
+                style="@style/txtAveriaSansLibreregular12" tools:text="@string/lbl_obat_a"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

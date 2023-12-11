@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumncheckmark"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackcheckmark"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_200pxv"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_51pxh"
+            android:layout_marginTop="@dimen/_216pxv"
+            android:layout_width="@dimen/_200pxh" style="@style/groupStylecyan_700cornerRadius">
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_60pxh"
+                android:layout_marginHorizontal="@dimen/_40pxh"
+                android:layout_marginVertical="@dimen/_40pxv"
+                android:layout_width="@dimen/_84pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtCongratulationsOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_51pxh"
+            android:layout_marginTop="@dimen/_51pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@string/lbl_congratulations"
+            style="@style/txtAveriaSansLibrebold40" tools:text="@string/lbl_congratulations"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtYourPaymentIs"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_51pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@string/msg_your_payment_is"
+            style="@style/txtAveriaSansLibrebold20" tools:text="@string/msg_your_payment_is"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnBack"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_124pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@string/lbl_back" android:textAllCaps="false"
+            style="@style/btnSolidRounded_4" tools:text="@string/lbl_back"/>
+    </LinearLayout>
+</layout>

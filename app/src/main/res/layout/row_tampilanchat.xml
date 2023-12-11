@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearRowellipsethirtythree"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_100_4ccornerRadius">
+        <ImageView android:id="@+id/imageEllipseThirtyThree"
+            android:layout_height="@dimen/_70pxh"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="@dimen/_70pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse24}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse24"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnweburl"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.77" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowweburl"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWeburl"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_dr_upul"
+                    style="@style/txtAveriaSansLibreregular20_1" tools:text="@string/lbl_dr_upul"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt1250"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginStart="@dimen/_150pxh"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/lbl_12_50"
+                    style="@style/txtAveriaSansLibreregular12" tools:text="@string/lbl_12_50"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowworemconsectet"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWoremconsectet"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@string/msg_worem_consectet"
+                    style="@style/txtAveriaSansLibreregular12_1" tools:text="@string/msg_worem_consectet"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroupTwentyTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_46pxh"
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_2pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_6pxh"
+                    android:paddingTop="@dimen/_2pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_2"
+                    style="@style/txtSolidRounded_1" tools:text="@string/lbl_2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
