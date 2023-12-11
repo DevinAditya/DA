@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <FrameLayout android:id="@+id/frameStackweburl"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearCall"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageImageTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_154pxh"
+                android:layout_marginEnd="@dimen/_86pxh"
+                android:layout_marginStart="@dimen/_86pxh"
+                android:layout_marginTop="@dimen/_129pxv"
+                android:layout_width="@dimen/_152pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_70pxh}"
+                imageRes="@{@drawable/img_image2_154x152}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image2_154x152"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWeburl"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_86pxh"
+                android:layout_marginStart="@dimen/_86pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_dr_cindy2"
+                style="@style/txtAveriaSansLibrebold30" tools:text="@string/lbl_dr_cindy2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRinging"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_86pxh"
+                android:layout_marginStart="@dimen/_86pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_ringing"
+                style="@style/txtAveriaSansLibreregular18" tools:text="@string/lbl_ringing"/>
+            <LinearLayout android:id="@+id/linearRowgoogle"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_87pxv"
+                android:layout_marginEnd="@dimen/_86pxh"
+                android:layout_marginStart="@dimen/_86pxh"
+                android:layout_marginTop="@dimen/_258pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_radius_30"
+                    android:id="@+id/btnGoogle"
+                    android:layout_height="@dimen/_60pxh"
+                    android:layout_width="@dimen/_60pxh"
+                    android:paddingHorizontal="@dimen/_19pxh"
+                    android:paddingVertical="@dimen/_19pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_google" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_radius_30"
+                    android:id="@+id/btnGroupEighteen"
+                    android:layout_height="@dimen/_60pxh"
+                    android:layout_marginStart="@dimen/_98pxh"
+                    android:layout_width="@dimen/_60pxh"
+                    android:paddingHorizontal="@dimen/_19pxh"
+                    android:paddingVertical="@dimen/_19pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_group18" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/red_A700"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_165pxh"
+            android:layout_marginStart="@dimen/_165pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_60pxh"
+            app:srcCompat="@drawable/img_whatsapp" app:tint="@color/white_A700"/>
+    </FrameLayout>
+</layout>
